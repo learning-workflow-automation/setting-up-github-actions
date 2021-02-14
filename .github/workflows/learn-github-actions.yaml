@@ -4,6 +4,8 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - env:
+          super_secret: ${{secrets.GH_Token}}
       - uses: actions/checkout@v2
       - uses: ./.github/actions/hello-world-action
         with:
