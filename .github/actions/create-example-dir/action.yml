@@ -3,5 +3,7 @@ description: 'Pushes a directory created in this branch to another branch'
 runs:
   using: composite
   steps:
+    - run: chmod +x ./.github/actions/create-example-dir/push-script.sh
+      shell: bash
     - run: ./.github/actions/create-example-dir/push-script.sh
       shell: bash
