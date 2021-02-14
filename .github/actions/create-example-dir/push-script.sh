@@ -3,6 +3,8 @@ set -e
 
 mkdir example-dir
 cd example-dir
+git config --global user.email "krishnagopi487.github@outlook.com"
+git config --global user.name "BOT"
 git init
 git remote add origin https://github.com/learning-workflow-automation/setting-up-github-actions.git
 git fetch
