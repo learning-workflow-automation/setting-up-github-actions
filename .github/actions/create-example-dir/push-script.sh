@@ -14,6 +14,7 @@ git switch -c meow
 git pull origin meow
 git branch -u origin/meow
 echo 'Hello' > hello.txt
+echo 'Test' > test.txt
 git add .
 git commit -m 'Sample upload'
 git push
