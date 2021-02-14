@@ -1,0 +1,7 @@
+name: 'Push to Remote Branch'
+description: 'Pushes a directory created in this branch to another branch'
+runs:
+  using: composite
+  steps:
+    - run: ./.github/actions/create-example-dir/push-script.sh
+      shell: bash
