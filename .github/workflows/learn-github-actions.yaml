@@ -4,10 +4,14 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - env:
-          super_secret: ${{secrets.GH_Token}}
       - uses: actions/checkout@v2
       - uses: ./.github/actions/hello-world-action
         with:
           person_name: 'Gopi Krishna Menon'
-      - uses: ./.github/actions/create-example-dir
+      - name: x
+        env:
+          super_secret: ${{secrets.GH_Token}}
+        uses: ./.github/actions/create-example-dir
+        with:
+          github_token: super_secret
+      
