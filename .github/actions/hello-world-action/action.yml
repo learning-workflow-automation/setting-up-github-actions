@@ -1,0 +1,12 @@
+name: 'Hello World'
+description: 'Prints hello world to the screen'
+inputs:
+  person_name:
+    description: 'The person to greet hello'
+    required: true
+    default: 'Gopi'
+runs:
+  using: composite
+  steps:
+    - run: echo Hello ${{inputs.person_name}}.
+      shell: bash
