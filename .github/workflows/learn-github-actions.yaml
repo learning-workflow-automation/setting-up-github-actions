@@ -8,5 +8,6 @@ jobs:
       - uses: ./.github/actions/hello-world-action
         with:
           person_name: 'Gopi Krishna Menon'
-      - name: Setup Boost
-        run: ls -a
+      - name: Setup Docs
+        run: sudo apt-get install doxygen python3 python3-pip python3-setuptools
+        shell: bash
