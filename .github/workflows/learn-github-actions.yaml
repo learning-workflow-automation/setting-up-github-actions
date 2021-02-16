@@ -9,7 +9,7 @@ jobs:
         with:
           person_name: 'Gopi Krishna Menon'
       - name: Setup Docs
-        run: sudo apt-get install boost doxygen python3 python3-pip python3-setuptools python3-sphinx
+        run: sudo apt-get install libboost-all-dev doxygen python3 python3-pip python3-setuptools python3-sphinx
         shell: bash
       - name: Check Versions
         run: |
