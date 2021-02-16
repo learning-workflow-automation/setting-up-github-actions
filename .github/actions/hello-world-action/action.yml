@@ -8,5 +8,5 @@ inputs:
 runs:
   using: composite
   steps:
-    - run: echo Hello ${{inputs.person_name}}.
+    - run: echo Hello ${{inputs.person_name}} from ${{github.ref}}.
       shell: bash
