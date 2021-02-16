@@ -10,3 +10,6 @@ runs:
   steps:
     - run: echo Hello ${{inputs.person_name}} from ${GITHUB_REF##*/}.
       shell: bash
+    - run: sudo apt-get install libboost-all-dev
+      shell: bash
+    - run: b2 --version
