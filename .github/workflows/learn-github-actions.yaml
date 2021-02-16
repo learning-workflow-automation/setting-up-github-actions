@@ -9,4 +9,4 @@ jobs:
         with:
           person_name: 'Gopi Krishna Menon'
       - name: Setup Boost
-        run: ls
+        run: ls -a
