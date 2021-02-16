@@ -13,3 +13,4 @@ runs:
     - run: sudo apt-get install libboost-all-dev
       shell: bash
     - run: b2 --version
+      shell: bash
